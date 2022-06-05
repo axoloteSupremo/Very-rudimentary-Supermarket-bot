@@ -1,0 +1,22 @@
+// Supermarket bot 
+#include <iostream>
+using namespace std; 
+
+int main() {
+    string prompt1("What is your order?:"), 
+        order, 
+        lineOfStars(50, '*'), 
+        sentence1 = "Have an/a "; 
+        
+    cout << prompt1 << endl;
+    getline(cin, order);
+
+    sentence1 = sentence1 + order; 
+    cout << lineOfStars << endl 
+         << sentence1 << endl;
+    cout << "The name of your order is "
+         << order.length() << " characters long" << endl;
+    cout << lineOfStars << endl;
+    
+    return 0;
+}
